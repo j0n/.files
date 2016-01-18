@@ -12,10 +12,6 @@
             2,
             "unix"
         ],
-        "semi": [
-            2,
-            "never"
-        ],
         "arrow-spacing": [2, { "before": true, "after": true }],
         "block-spacing": [2, "always"],
         "brace-style": [2, "1tbs", { "allowSingleLine": true }],
@@ -116,7 +112,7 @@
         "wrap-iife": [2, "any"],
         "yoda": [2, "never"],
         "camelcase": [2, { properties: "always"}],
-        "no-console": 1
+        "no-console": 0
     },
     "env": {
         "es6": true,

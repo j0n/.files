@@ -33,7 +33,7 @@ map <C-e> :NERDTreeToggle<CR>
 
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
@@ -42,7 +42,8 @@ let g:elm_make_output_file = "elm.js"
 let g:elm_make_show_warnings = 1
 let g:elm_browser_command = ""
 let g:elm_detailed_complete = 0
-au BufWritePost *.elm ElmMakeMain
+au bufwritepost *.elm elmmakemain
+au bufwritepost *.js SyntasticCheck
 
 if filereadable(".vim.custom")
     so .vim.custom
